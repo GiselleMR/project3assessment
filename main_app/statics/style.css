@@ -1,7 +1,13 @@
 body {
     text-align: center;
     margin: 2rem;
-}
-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
     text-align: center;
-}
+  }
+  
+ 
