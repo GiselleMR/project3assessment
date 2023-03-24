@@ -4,5 +4,4 @@ from django.urls import reverse
 
 class Item(models.Model):
     description = models.TextField(max_length=300)
-    def __str__(self):
-        return self.title
+    
