@@ -5,7 +5,7 @@
 <h1>Wish List Items</h1>
 
 {% if item_list %}
-<table>
+<table class="pure-table">
   <thead>
     <tr>
       <th>Description</th>
@@ -15,7 +15,7 @@
 {% for item in item_list.all %}
   <tr>
     <td>{{ item.name }}</td>
-    <td><a class="delete-link" href="{% url 'item_delete' item.id %}">X</a></td>
+    <!-- <td><a class="delete-link" href="{% url 'item_delete' item.id %}">X</a></td> -->
   </tr>
 {% endfor %}
 </table>
@@ -24,6 +24,9 @@
 {% endif %}
 
 <hr>
-<a class="add-item" href="">Add A Wish Item</a>
+<button class="pure-button">
+  <a href="{% url 'item_create' %}">Add a Wish Item</a>
+</button>
+
 
 {% endblock %}
